@@ -76,7 +76,7 @@
             <div class="ccontact">
                 <div class="form-box">
                     <h1 class="form-heading"> Get In Touch</h1>
-                    <form action="form.php" method="POST">
+                    <form action="" name="contactform" id="contactform" method="POST">
 
                         <!-- <label for="BookID" class="col-sm-2 col-form-label">Book Id *</label> -->
                         <div class="cform">
@@ -85,7 +85,7 @@
                             <input type="text" name="phone" class="form-control" placeholder=" Phone no." id="phone" required><br>
                             <input type="text" name="subject" class="form-control" placeholder=" Subject" id="subject" required><br>
                             <!-- <input type="textarea" name="message" class="form-control" placeholder=" Drop a message" id="message" required><br> -->
-                            <textarea name="message" name="body" id="body" class="form-control" cols="20" rows="3" placeholder=" Drop a message" required></textarea>
+                            <textarea name="message"  id="message" class="form-control" cols="20" rows="3" placeholder=" Drop a message" required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" name="submit" class="cbtn btn-primary">Send Message</button>
@@ -106,13 +106,13 @@
         <div class="ftr socialmedia">
         <p>SOCIAL MEDIA</p><br>
         <i class="fa-brands fa-facebook "></i>
-        <a href="facebook.com">Facebook</a>
+        <a href="https://www.facebook.com/anandhouses/" target= "_blank">Facebook</a>
         <br>
         <i class="fa-brands fa-instagram"></i>
-        <a href="facebook.com">Instagram</a>
+        <a href="https://www.instagram.com/anandhouses/" target= "_blank">Instagram</a>
         <br>
         <i class="fa-brands fa-twitter"></i>
-        <a href="facebook.com">Twiter</a>
+        <a href="https://twitter.com/AnandHouses" target= "_blank">Twiter</a>
         </div>
         <div class="ftr quicklink">
             <p>QUICK LINK</p><br>
@@ -124,6 +124,8 @@
         </div>
         <div class="ftr address">
         <p>ADDRESS</p><br>
+
+        Tekari Gaya, Bihar
 
         <p class="add"></p>
         </div>
@@ -137,6 +139,18 @@
             
         </p>
     </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXyaJYJdyZHdmS540tOKXw2DljtOiGW_r-WUvyR5vvYZvV_NwvA-OvkwxsbibY5ZJwWg/exec'
+        const form = document.forms['contactform']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(()=> {alert("We have received your message and would like to thank you for writing to us. We will get in touch soon.");})
+            .catch( ()=> {alert("We haven't recieved your message, Kindly fill it again!");})
+        })
+      </script>
 
     <script src="https://kit.fontawesome.com/f073f3d2c7.js" crossorigin="anonymous"></script>
      <!--Ending of the Footer-->
