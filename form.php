@@ -20,6 +20,7 @@ if(isset($_POST['submit'])){
     }else{
          echo "Failed To Send Mail";
     }
+     header("Location:index.html");
 }
 
 ?>
