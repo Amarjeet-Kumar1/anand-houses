@@ -1,0 +1,111 @@
+.aboutbox {
+    /* height: 550px; */
+    background-color: white;
+}
+
+.about {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.ideas {
+    display: flex;
+    width: 90%;
+    background-color: white;
+    /* height: 260px; */
+    margin: auto;
+}
+
+.subideas {
+    /* height: 230px; */
+    width: 23%;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 33px;
+
+}
+
+.icon {
+    font-size: 50px;
+    color: black;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    
+}
+
+
+.ideas_heading {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 19px;
+    font-style: italic;
+}
+
+.ideacontain {
+    text-align: center;
+    font-size: 17px;
+}
+
+.callus {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: 5px solid red;
+    margin: 38px 13.5rem;
+}
+
+.callus a {
+    color: white;
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+    /* height: 220px; */
+    background-color: black;
+    color: white;
+}
+
+.subfooter {
+    /* background: #b4aaaa; */
+    /* height: 220px; */
+    width: 67%;
+    margin: auto;
+    display: flex;
+    padding-top: 15px;
+}
+
+.ftr {
+    /* background: wheat; */
+    height: 220px;
+    width: 29%;
+    margin: auto;
+}
+
+.ftr a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.ftr i {
+    font-size: 32px;
+}
+
+.ftr p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quicklink li {
+    list-style: none;
+}
