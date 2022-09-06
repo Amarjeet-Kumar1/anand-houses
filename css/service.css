@@ -12,6 +12,7 @@
 
 .ideas {
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     background-color: white;
     /* height: 260px; */
@@ -20,7 +21,7 @@
 
 .subideas {
     /* height: 230px; */
-    width: 23%;
+    width: 250px;
     background-color: white;
     margin: auto;
     border-radius: 15px;
@@ -50,6 +51,13 @@
     text-align: center;
     font-size: 17px;
 }
+.redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+
+}
 
 .callus {
     padding: 10px;
@@ -59,7 +67,7 @@
     color: white;
     border-radius: 25px;
     border: 5px solid red;
-    margin: 38px 13.5rem;
+    /* margin: 38px 13.5rem; */
 }
 
 .callus a {

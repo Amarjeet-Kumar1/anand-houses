@@ -25,6 +25,7 @@ html{
     top: 0px;
     cursor: pointer;
     border: none;
+    z-index: 1;
     
 }
 .logo{
@@ -83,6 +84,23 @@ color: black;
   
 
 }
+.b-logo{
+    width: 7%;
+    position: absolute;
+    cursor: pointer;
+    left: 15px;
+    top: 6%;
+    display: none;
+}
+.b-logo img{
+    
+    width: 68%;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* padding-left: 0px; */
+    margin-left: 2px;
+    /* display: none; */
+}
 .burger{
     position: absolute;
     cursor: pointer;
@@ -92,7 +110,11 @@ color: black;
 }
 
 
-
+.navBackground{
+    background: rgb(72, 100, 100) ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
 
 
 .background{
@@ -189,6 +211,7 @@ color: black;
     display: flex;
     width: 85%;
     
+    
     justify-content: center;
     /* height: 500px; */
     margin: auto;
@@ -208,7 +231,7 @@ color: black;
     transform: scale(1.1);
 }
 .databox:hover .img-hover{
-    width: 200px;
+    width: 50%;
     border-radius: 15px 0px;
  padding: 8px 15px;
  visibility: visible;
@@ -241,6 +264,7 @@ color: black;
  right: 0;
  background: black;
  color: white;
+ /* font-size: large; */
  margin-bottom: 5px;
  font-family: sans-serif;
  opacity: 0;

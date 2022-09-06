@@ -26,6 +26,10 @@ width: 50%;
     font-size: 19px;
     font-weight: 600;
 }
+.i-font{
+    font-family: sans-serif;
+}
+
 .daddress{
     color: white;
 }

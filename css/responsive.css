@@ -1,6 +1,7 @@
 @media only screen and (min-width:550px) and (max-width:850px){
-    .logo img{
-        width: 141%;
+   
+    .logo{
+        display: none;
     }
     .nav-list{
         flex-direction: column;
@@ -8,11 +9,12 @@
     .navbar{
         flex-direction: column;
         transition: all 0.7s ease-in-out;
-        height: 500px;
+        height: 250px;
     }
+   
     #search{
         width: 80%;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
     .Right-nav{
         text-align: center;
@@ -21,6 +23,10 @@
         
         display: block;
     }
+    .b-logo{
+        display: inline-block;
+    }
+    
     .h-nav{
         height: 44px;
     }
@@ -35,21 +41,97 @@
         padding: 20px;
     }
     .Right-box img{
-        width:240px;
+        width:200px;
 
     }
     
+    
 
     .first-section {
-        height: 100vh;
+        height: 80vh;
     }
-
+    .text-big{
+        text-align: center;
+    }
+    .databox{
+        height: 225px;
+        
+}
+    .imgbox{
+        height: 200px;
+    }
     .button{
         text-align: center;
     }
     
 }
 @media only screen and (min-width:350px) and (max-width:550px){
+   
+    .logo{
+        display: none;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-in-out;
+        
+    }
+   
+    #search{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .Right-nav{
+        text-align: center;
+    }
+    .burger{
+        
+        display: block;
+    }
+    .b-logo{
+        display: inline-block;
+        width: 10%;
+    }
+    
+    .h-nav{
+        height: 44px;
+    }
+    .opacity0{
+        opacity: 0;
+    }
+    .main-box{
+      
+        flex-direction: column-reverse;
+
+        max-width: 100%;
+        padding: 20px;
+    }
+    .Right-box{
+       width: 50%;
+    }
+    .Right-box img{
+        width:200px;
+        
+
+    }
+    
+    
+
+    .first-section {
+        height: 80vh;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+   
+
+
+
     .box{
         display: flex;
         flex-direction: column;
@@ -157,6 +239,7 @@
         background-color: blue;
         color: white;
     }
+    
     .footer-text{
         height: 18px;
         width: 72%;
@@ -174,22 +257,28 @@
     }
     .subfooter{
         /* background: #b4aaaa; */
-        /* height: 220px; */
+        height: 50vh;
         width: 100%;
         margin: auto;
         display: flex;
-        padding-top: 15px;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 15px; */
+        gap: 3.5vh;
     }
     .ftr{
         /* background: wheat; */
-        height: 220px;
-        width: 29%;
+        height: auto;
+        width: 35%;
         margin: auto;
     }
     .ftr a{
         text-decoration: none;
         font-weight: bolder;
         color: white;
+        
     }
     .ftr i{
         font-size: 32px;
