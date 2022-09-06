@@ -117,6 +117,11 @@ color: black;
 }
 
 
+.cbackground{
+    background: rgb(72, 100, 100) ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
 .background{
     background: rgba(0, 0, 0, 0.5) url('../img/background2.jpg');
     background-size: cover;
@@ -349,13 +354,13 @@ color: black;
 }
 .footer-text{
     height: 18px;
-    width: 72%;
+    width: 100%;
     margin: auto;
     text-align: center;
     justify-content: center;
     align-content: center;
-    padding-top: 23px;
-    padding-bottom: 7px;
+    padding-top: 10px; 
+     padding-bottom: 10px;
 }
 .footer{
     /* height: 220px; */
