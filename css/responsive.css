@@ -246,22 +246,17 @@
         background-color: blue;
         color: white;
     }
-    
-    /* .footer-text{
-        height: 18px;
-        width: 72%;
-        margin: auto;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        padding-top: 23px;
-        padding-bottom: 7px;
-    } */
-    .footer{
-        /* height: 220px; */
-        background-color: black;
-        color: white;
+    .cbackground{
+        height: 0px;
     }
+    
+    .footer-text{
+        width: 100%;
+        margin: auto;
+    }
+
+    
+    
     .subfooter{
         /* background: #b4aaaa; */
         height: 50vh;
@@ -281,22 +276,12 @@
         width: 35%;
         margin: auto;
     }
-    .ftr a{
-        text-decoration: none;
-        font-weight: bolder;
-        color: white;
-        
-    }
-    .ftr i{
-        font-size: 32px;
-    }
+   
     
     .ftr p{
         font-size: 14px;
         font-weight: bold;
     }
     
-    .quicklink li{
-        list-style: none;
-    }
+    
 }
