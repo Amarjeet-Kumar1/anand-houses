@@ -213,6 +213,10 @@
     .c_background{
         height: 150vh;
     }
+
+    .form-box{
+        width: 80vw;
+    }
     .form{
     
         margin: auto;
