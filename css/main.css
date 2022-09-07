@@ -160,6 +160,7 @@ color: black;
     width: 30%;
 }
 .Right-box img{
+    width: 100%;
     border: 5px solid wheat;
     border-radius: 143px;
     display: block;
