@@ -77,43 +77,7 @@
 
 /* footer */
 
-.footer {
-    /* height: 220px; */
-    background-color: black;
-    color: white;
-}
 
-.subfooter {
-    /* background: #b4aaaa; */
-    /* height: 220px; */
-    width: 67%;
-    margin: auto;
-    display: flex;
-    padding-top: 15px;
-}
 
-.ftr {
-    /* background: wheat; */
-    height: 220px;
-    width: 29%;
-    margin: auto;
-}
 
-.ftr a {
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
-}
 
-.ftr i {
-    font-size: 32px;
-}
-
-.ftr p {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.quicklink li {
-    list-style: none;
-}

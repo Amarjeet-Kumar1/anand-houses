@@ -5,9 +5,14 @@ window.onload=function(){
         console.log("clicked");
         document.location.href = '/contact.html';
     });
+   
 }
 
-console.log("this is index.js for just verify ");
+
+
+
+
+
 // btn = document.getElementById('btn')
 // btn.addEventListener('click',func1);
 

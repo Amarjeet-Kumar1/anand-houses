@@ -60,9 +60,13 @@ html{
 text-decoration: none;
 color: black;
 }
+
+
 .nav-list li a:hover{
     color: rgb(238, 13, 13);
     }
+     
+   
 .Right-nav{
    
     width: 33%;
