@@ -88,8 +88,10 @@
                             <!-- <input type="textarea" name="message" class="form-control" placeholder=" Drop a message" id="message" required><br> -->
                             <textarea name="message"  id="message" class="form-control" cols="20" rows="3" placeholder=" Drop a message" required></textarea>
                         </div>
+                        <div id="loader" class="loader"></div>
                         <div class="text-center">
-                            <button type="submit" name="submit" class="cbtn btn-primary">Send Message</button>
+                        
+                            <button type="submit" name="submit" id="btn-s" class="cbtn btn-primary">Send Message</button>
                         </div>
 
 
@@ -144,11 +146,13 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzXyaJYJdyZHdmS540tOKXw2DljtOiGW_r-WUvyR5vvYZvV_NwvA-OvkwxsbibY5ZJwWg/exec'
         const form = document.forms['contactform']
-      
+
         form.addEventListener('submit', e => {
+           document.getElementById('loader').style.display = "block";
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(()=> {alert("We have received your message and would like to thank you for writing to us. We will get in touch soon.");})
+            .then(()=> {alert("We have received your message and would like to thank you for writing to us. We will get in touch soon.");
+                window.location = '/contact.html';})
             .catch( ()=> {alert("We haven't recieved your message, Kindly fill it again!");})
         })
       </script>

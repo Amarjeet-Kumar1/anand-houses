@@ -1,12 +1,18 @@
 window.onload=function(){
     console.log("this is index.js for just verify ");
-    var btnc = document.getElementsByClassName('btn2');
-    btnc[0].addEventListener('click', function(){
+    var btnc = document.getElementById('btn-c');
+    btnc.addEventListener('click', function(){
         console.log("clicked");
         document.location.href = '/contact.html';
     });
    
 }
+
+// var btns = document.getElementById('btn-s');
+// btns.addEventListener('click', function(){
+//     console.log("clicked");
+//     document.location.href = '/contact.html';
+// });
 
 
 
