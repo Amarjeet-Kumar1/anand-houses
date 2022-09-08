@@ -152,7 +152,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(()=> {alert("We have received your message and would like to thank you for writing to us. We will get in touch soon.");
-                window.location = '/contact.html';})
+                window.location.href = '/contact.html';})
             .catch( ()=> {alert("We haven't recieved your message, Kindly fill it again!");})
         })
       </script>
