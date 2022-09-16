@@ -205,6 +205,9 @@ color: black;
     .announcement button{
         font-size: 0.8rem;
     }
+    .ann-icon{
+        font-size: 1rem;
+    }
 
     /* .announcement{
         overflow: hidden;       
