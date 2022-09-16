@@ -200,10 +200,10 @@ color: black;
 
   @media only screen and (min-width:350px) and (max-width:550px){
     .ann-content{
-        font-size: 0.9rem ;
+        font-size: 0.8rem ;
     }
     .announcement button{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     /* .announcement{
