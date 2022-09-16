@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/modal.css">
     <!-- <link rel="stylesheet" href="css/iphonexresp.css"> -->
     <script src="https://kit.fontawesome.com/6d0143e1f7.js" crossorigin="anonymous"></script>    <script src="js/index.js"></script>
     <title>Anand Houses</title>
@@ -35,9 +36,69 @@
         </div>
     </nav>
     <!--End of the header part-->
+    <!-- call back modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Refer & Earn</h2>
+            </div>
+            <div class="modal-body">
+              <p>Anand House is happy to announce our Refer & Earn program, where 
+                you can earn upto 10% of project cost by refering your friends, family or neighbours.
+              </p>
+              <p> &nbsp </p>
+              <p> &nbsp </p>
+              <p>So what are you waiting for? Request a call by filling this form and earn</p>
+              <form action="" name="contactform" id="contactform" method="POST">
+
+                
+                <div class="cform">
+                    <input type="text" name="name" class="form-control" placeholder=" Name" id="name" required><br>
+                    <input type="text" name="phone" class="form-control" placeholder=" Phone no." id="phone" required><br>
+                    <textarea name="message"  id="message" class="form-control" cols="20" rows="3" placeholder=" Drop a message" ></textarea>
+                </div>
+                <div id="loader" class="loader"></div>
+                <div class="text-center">
+                
+                    <button type="submit" name="submit" id="btn-s" class="cbtn btn-primary">Request Call Back</button>
+                </div>
+
+
+            </form>
+            </div>
+            <div class="modal-footer">
+              <h3>Happy Earning</h3>
+            </div>
+          </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjXU-6INknmrWFTam6GRVx69Ou4JXoXlFRImdqGaJwgZ8VgrulVpN0L5M_-zo55jOFLw/exec'
+        const form = document.forms['contactform']
+
+        form.addEventListener('submit', e => {
+           document.getElementById('loader').style.display = "block";
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(()=> {alert("We have received your message and would like to thank you for writing to us. We will get in touch soon.");
+                window.location.reload();})
+            .catch( ()=> {alert("We haven't recieved your message, Kindly fill it again!");})
+        })
+      </script>
 
     <!--Starting of the firstsection-->
     <section class="first-section background">
+        <div class="announcement">
+            <div class="ann-content">
+                <div class="ann-icon">
+                    <i class="fa-solid fa-bullhorn ani-icon"></i>
+                </div>
+            
+                <p>Refer and Earn upto 10% of project cost !&nbsp;&nbsp;&nbsp;
+                |&nbsp;&nbsp;&nbsp;<button id="call-back" >Request call back >
+                </button></p>
+            </div>
+        </div>
         <div class="main-box">
             <div class="left-box">
                 <p class="text-big">Anand Houses</p>
