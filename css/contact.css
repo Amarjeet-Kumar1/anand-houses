@@ -3,8 +3,8 @@
     background-size: cover;
     background-blend-mode: soft-light;
     padding-bottom: 50px;
-    /* height: 100vh; */
-    /* height: 800px */
+    height: 110vh;
+   
 }
 .cheading{
     font-size: 50px;
@@ -22,14 +22,14 @@
 
 
 .ccontact{
-    width: 50%;
+    width: 30%;
     margin: auto;
    
 }
 .form-box{
     background-color: white;
     /* height: 560px; */
-    width: 393px;
+    width: 100%;
     /* width: 393px; */
     margin: auto;
     margin-top: 38px;

@@ -44,14 +44,14 @@
 
 
     /* services */
-    .box{
-       
-        
-    }
+    
     .databox{
         width: 45%;
     }
    
+    .ccontact{
+        width: 60vw;
+    }
 
     /* footer */
     .subfooter{
@@ -184,57 +184,15 @@
        
     }
     
-    .center-text{
-        text-align: center;
-        padding: 25px;
-    }
-    .contact{
-        padding-top: 25vh;
-        flex-direction: column-reverse;
-    }
-    .c_background{
-        height: 150vh;
-    }
+   
+    
+    
 
-    .form-box{
+    .ccontact{
         width: 80vw;
     }
-    .form{
     
-        margin: auto;
-        max-width: 350px;
-    }
-    
-    .form input{
-        width: 100%;
-        font-size: 18px;
-        margin: 10px 0px;
-        padding-left: 10px;
-        border: none;
-        border-bottom: black solid 2px;
-        border-radius: 5px
-    }
-    .button1{
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        padding: 12px;
-    }
-    .submit-btn{
-        padding: 4px 18px;
-        font-size: 17px;
-        border-radius: 10px;
-        border: 3px solid darkgreen;
-        cursor: pointer;
-        
-    }
-    .submit-btn:hover{
-        background-color: blue;
-        color: white;
-    }
-    /* .cbackground{
-        height: 0px;
-    } */
+   
     
     .footer-text{
         font-size: 0.9rem;
