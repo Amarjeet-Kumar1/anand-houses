@@ -17,36 +17,39 @@
 html{
     scroll-behavior: smooth;
 }
+/* naviagation bar */
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0px;
-    cursor: pointer;
     border: none;
     z-index: 1;
-    
+    height: 7.5vh;
+    overflow: hidden;
 }
+/* navigation bar logo */
 .logo{
-    width: 8%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    margin-left: 10%;
+    width: 50px;
+    min-width: 50px;
 }
 .logo img{
     
-    width: 68%;
+    width: 90%;
     border: 2px solid white;
     border-radius: 50%;
+    vertical-align: middle;
     /* padding-left: 0px; */
     margin-left: 2px;
 }
+.Right-nav{
+    margin-right: 10%;
+     
+ }
 .nav-list{
     display: flex;
-    width: 70%;
-    
-    
     align-items: center;
 }
 .nav-list li{
@@ -58,27 +61,30 @@ html{
 }
 .nav-list li a {
 text-decoration: none;
-color: black;
+color: white;
 }
 
 
 .nav-list li a:hover{
     color: rgb(238, 13, 13);
+    cursor: pointer;
     }
      
    
-.Right-nav{
-   
-    width: 33%;
-    text-align: right;
-    padding: 0px 25px;
+/* navigation call button */
+.nav-call:hover{
+    cursor: pointer;
+    background-color: orange;
 }
-#search{
-    border-radius: 10px;
-    padding: 5px 0px;
-   border: black 2px solid;
-    font-size: 16px;
-    margin-right: 5px;
+
+.nav-call{
+    background-color: rgb(234, 190, 110);
+    width: auto;
+    border: none;
+    border-radius: 18px;
+    padding: 5px 12px ;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .line{
     width: 33px;
@@ -88,36 +94,23 @@ color: black;
   
 
 }
-.b-logo{
-    width: 7%;
-    position: absolute;
-    cursor: pointer;
-    left: 15px;
-    top: 6%;
-    display: none;
-}
-.b-logo img{
-    
-    width: 68%;
-    border: 2px solid white;
-    border-radius: 50%;
-    /* padding-left: 0px; */
-    margin-left: 2px;
-    /* display: none; */
-}
+
 .burger{
-    position: absolute;
+   
     cursor: pointer;
-    right: 15px;
-    top: 5%;
+    float: right;
+    vertical-align: middle;
     display: none;
 }
+
+/* background */
 
 
 .navBackground{
-    background: rgb(72, 100, 100) ;
+    background: rgb(93, 131, 131) ;
     background-size: cover;
     background-blend-mode: darken;
+   
 }
 
 
@@ -129,6 +122,7 @@ color: black;
 }
 .background{
     background: rgba(0, 0, 0, 0.5) url('../img/background2.jpg');
+   
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -139,6 +133,7 @@ color: black;
     position: relative;
 
 }
+/* announcement section */
 .announcement{
     display: flex;
     justify-content: center;
@@ -237,40 +232,87 @@ color: black;
     width: 70%;
     display: flex;
     flex-direction: column;
+   
     justify-content: center;
+    
    
 
+}
+.mob{
+    display: none;
 }
 .Right-box{
     width: 30%;
 }
 .Right-box img{
     width: 100%;
-    border: 5px solid wheat;
-    border-radius: 143px;
+    /* border: 5px solid wheat; */
+    /* border-radius: 143px; */
+    border-radius: 50%;
     display: block;
     margin: auto;
 }
+.pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+  @keyframes pulse {
+    from { transform: scale(0.8); }
+    to { transform: scale(1.1); }
+  }
+  /* .bounce2 {
+    animation: bounce2 2s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+  } */
 .text-big{
     font-size: 50px;
-    font-style: italic;
+    
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-family: 'Dela Gothic One', cursive;
+    /* font-family: 'Dela Gothic One', cursive; */
 }
 .text-small{
-    font-size: 20px;
+    font-size: 30px;
+    font-family: Georgia, serif;
+    
    
 }
+.text-small a{
+    text-decoration: none;
+    color: orange;
+}
+.button{
+    width: 70%;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #0a0a0d;
+    font-weight: bold;
+}
 .btn{
-    padding: 5px 15px;
-    border: 2px solid black;
-    border-radius: 9px;
-    cursor: pointer;
-    font-size: 15px;
-    background: none;
-    color: white
+    background-color: rgb(234, 190, 110);
+    margin: 0% 10%;
+    width: 50%;
+    border: none;
+    border-radius: 18px;
+    padding: 5px 12px ;
+    white-space: nowrap;
    
 
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: orange;
+    transform: scale(1.08);
 }
 .btn2{
     margin-top: 15px;
@@ -296,6 +338,8 @@ color: black;
 .Paragraph{
     margin: 20px;
 }
+
+/* services */
 .second-section-Big-text{
     text-align: center;
     font-size: 50px;
@@ -306,9 +350,11 @@ color: black;
 .box{
     display: flex;
     width: 85%;
-    
+    flex-wrap: wrap;
     
     justify-content: center;
+   
+   
     /* height: 500px; */
     margin: auto;
     border-radius: 11px;
@@ -316,15 +362,16 @@ color: black;
 }
 .databox{
     background: rgb(243 236 243);
-    width: 50%;
+    width: 30%;
     /* height: 280px; */
     border-radius: 25px;
     margin-left: 31px;
+    margin-bottom: 31px;
     box-shadow: 3px 3px 3px 3px #9a9999
    
 }
 .databox:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .imgbox{
@@ -357,7 +404,7 @@ color: black;
 }
 .designdetail{
     margin: 17px;
-    text-align: center;
+    text-align: justify;
 }
  
 
@@ -436,38 +483,101 @@ color: black;
 }
 .footer{
     /* height: 220px; */
-    background-color: rgb(67, 168, 179);
     color: white;
 }
 .subfooter{
-    /* background: #b4aaaa; */
-    /* height: 220px; */
-    width: 67%;
-    margin: auto;
+    width: 75%;
     display: flex;
-    padding-top: 15px;
-}
-.ftr{
-    /* background: wheat; */
-    /* height: 220px; */
-    width: 29%;
+    justify-content: space-between;
     margin: auto;
+    
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
-.ftr a{
+
+.ftr{
+    
+    width: 35%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.f-contact{
+    width: 25%;
+}
+.q-link{
+    width: 15%;
+}
+.ftr ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+  }
+  .social-icons li{
+    display: inline-block;
+    margin: 5px;
+  }
+  .footer-items img{
+    margin: none;
+  }
+ 
+
+ .ftr a{ 
     text-decoration: none;
-    font-weight: bolder;
     color: white;
 }
-.ftr i{
-    font-size: 32px;
+.c-item a:hover {
+    color: rgb(125, 121, 115);
 }
 
-.ftr p{
-    font-size: 20px;
+
+
+/* The Overlay (background) */
+.overlay {
+    
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(252, 247, 247); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay ul li a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 50px;
+    color: black;
     font-weight: bold;
-}
-
-.quicklink li{
-    list-style: none;
-}
-
+    display: block; 
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay ul li a:hover, .overlay ul li a:focus {
+    color: red;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }

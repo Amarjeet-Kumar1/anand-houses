@@ -3,7 +3,7 @@
     background-color: white;
 }
 
-.about {
+.s-about {
     font-size: 50px;
     text-align: center;
     padding: 40px;
@@ -63,11 +63,16 @@
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    background-color: black;
+    background-color: rgb(237, 184, 86);
     color: white;
     border-radius: 25px;
-    border: 5px solid red;
+    border: none;
     /* margin: 38px 13.5rem; */
+}
+.callus:hover{
+    cursor: pointer;
+    background-color: orange;
+    transform: scale(1.08);
 }
 
 .callus a {

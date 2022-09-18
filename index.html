@@ -10,24 +10,31 @@
     <link rel="stylesheet" href="css/modal.css">
     <!-- <link rel="stylesheet" href="css/iphonexresp.css"> -->
     <script src="https://kit.fontawesome.com/6d0143e1f7.js" crossorigin="anonymous"></script>    <script src="js/index.js"></script>
-    <title>Anand Houses</title>
+    <title>Anand Houses : Make Your Dream Home</title>
+    <link rel="icon"  href="img/icon.png">
+    <!-- SEO meta tag -->
+    <meta name="keywords" content="AnandHouses, Anand Houses, building design, structural design, House design , Home plan , Interior design , Home design, Floor Plan , Elevation design">
+    <meta name="description" content="AnandHouses is one of the best and trusted Indian brand which provides you unique and latest Indian house design and floor plan 
+    online for your dream home that have designed by top architects. Call us at +91-9304655476 for expert advice.">
+    <meta name="author" content="Amarjeet Kumar">
 </head>
 
 <body>
     <!--Starting of the header part-->
-    <nav class="navbar navBackground h-nav">
-        <ul class="nav-list opacity0">
-            <div class="logo"><img src="img/icon.png" alt="logo"></div>
-            <li><a style="color: #051774;" href="index.html">Home</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- <li><a href="../anand home/contact-form-10/index.html">Contact</a></li> -->
-        </ul>
-        <div class="Right-nav opacity0">
-            <input type="text" name="search" id="search">
-            <button class="btn  btn-sm">Search</button>
+    <nav class="navbar navBackground">
+        <div class="logo"><a  href="index.html"><img src="img/icon.png" alt="logo"></a></div>
+        
+        <div class="Right-nav ">
+            <ul class="nav-list ">
+                <li><a style="color: #051774;" href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="nav-call" id="nav-call" >Request Call Back
+                </button></li>
+            </ul>
+            
         </div>
-        <div class="b-logo"><img src="img/icon.png" alt="logo"></div>
+          
         
         <div class="burger">
             <div class="line"></div>
@@ -36,6 +43,26 @@
         </div>
     </nav>
     <!--End of the header part-->
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <ul>
+                <li><a style="color: #051774;" href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><button class="nav-call" id="call-back" >Request Call Back
+                </button></li> -->
+                
+            </ul>
+        </div>
+  
+    </div>
     <!-- call back modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -95,22 +122,26 @@
                 </div>
             
                 <p>Refer and Earn upto 10% of project cost !&nbsp;&nbsp;&nbsp;
-                |&nbsp;&nbsp;&nbsp;<button id="call-back" >Request call back >
+                |&nbsp;&nbsp;&nbsp;<button  id="call-back" >Request call back >
                 </button></p>
             </div>
         </div>
         <div class="main-box">
             <div class="left-box">
-                <p class="text-big">Anand Houses</p>
-                <p class="text-small"></p>
+                <p class="text-big lap">Anand Houses</p>
+                <p class="text-big mob">Anand</p>
+                <p class="text-big mob">Houses</p>
+                <p class="text-small">Make Your Dream <a href="" class="typewrite" data-period="2000" data-type='[ "Home", "Office", "Hotel", "School" ]'>
+                    <span class="wrap"></span>
+                  </a></p>
                 <div class="button">
-                    <button id="btn-c" class="btn btn2">make a perfect</button>
-                    <!-- <button class="btn btn2">View World Map</button> -->
+                    <button id="btn-c" class="btn btn2"><a href="tel:9304655476">CALL US</a></button>
+                    <button id="btn-c" class="btn btn2"><a target="_blank" href="https://api.whatsapp.com/send?phone=9304655476&text=Hello Anand Houses">WHATSAPP</a></button>
                 </div>
 
             </div>
-            <div class="Right-box">
-                <img src="img/icon.png" alt="image">
+            <div class="pulse Right-box">
+                <img src="img/home.png" alt="image">
 
             </div>
         </div>
@@ -119,9 +150,7 @@
 
     <!--Ending of the firstsection-->
 
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=8039596&style=0001&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>        
+
     <!--Starting of the Secondsection-->
 
     <section class="second-section">
@@ -179,13 +208,7 @@
                         While it is important for building any home, it is essential when building a double-story.</p>
                 </div>
             </div>
-        </div>
-
-
-
         
-        <br>
-        <div class="box">
             <div class="databox">
                 <div class="imgbox">
                 <img class="serviceimage" src="img/plumbing.jpg" alt="" srcset="">
@@ -242,64 +265,65 @@
 
     <!--Ending of the Secondsection-->
 
-    <!--Starting of the Thirdsection-->
-
-
-
-    <!--Ending of the Fourthsection-->
-
-
-    <!--Starting of the Contact section-->
-    <!-- <section class="contact" id="contact">
-        <h2 class="center-text">Contact US</h2>
-        <div class="form">
-
-            <input type="text" name="Name" id="name" placeholder="Enter Your Name">
-            <input type="number" name="age" id="age" placeholder="Enter Your Age">
-            <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number">
-            <input type="email" name="Email" id="Email" placeholder="Enter Your Email">
-
+    <!-- footer -->
+    <div class="footer" style="background-color: #30237B;">
+        <div class="subfooter">
+            
+                <div class="ftr about">
+                    
+                    <div class=" footer-items">
+                        
+                      <img src="img/icon2.png" width="120px">
+                      <h3 class="abouth3">About US</h3>
+                       
+                        <p class="about-dis">AnandHouses is one of the best and trusted Indian brand which provides you unique and latest Indian house design and floor plan 
+                            online for your dream home that have designed by top architects.</p>
+                        <!-- Social Icons -->
+                        <ul class="social-icons">
+                            <li class="s-icon"><a href="https://www.facebook.com/anandhouses/" target= "_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                            <li class="s-icon"><a href="https://twitter.com/AnandHouses" target= "_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                            <li class="s-icon"><a href="https://www.instagram.com/anandhouses/ target= "_blank""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftr f-contact">
+                    <!-- Footer Items -->
+                    <div class="footer-items">
+                        <!-- Footer Title -->
+                        <h3 class="c-heading" style="color: #f7bb26;">Contact Us</h3>
+                        <ul>
+                            <li class="c-item"><a  href="#">Email: anandhouses2@gmail.com</a></li>
+                            <li class="c-item"><a  href="#">Call at : +91-9304655476</a></li>
+                            <li class="c-item"><a  href="#">MIT Muzaffarpur, Bihar , 842003</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftr q-link">
+                    <!-- Footer Items -->
+                    <div class="footer-items">
+                        <!-- Footer Title -->
+                        <h3 class="c-heading" style="color: #f7bb26;">Useful Link</h3>
+                        <ul>
+                            <li class="c-item"><a  href="index.html">Home</a></li>
+                            <li class="c-item"><a  href="service.html">Service</a></li>
+                            <li class="c-item"><a  href="contact.html">Contact</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+               
+            
         </div>
-
-        <div class="button1">
-            <button id="btn" class="submit-btn" type="button">Submit</button>
-
-        </div>
-    </section> -->
-
-    <!--Ending of the Contact section-->
-
-    <!--Starting of the Footer-->
-    <div class="footer">
-    <div class="subfooter">
-        <div class="ftr socialmedia">
-        <p><u> SOCIAL MEDIA </u></p><br>
-        <i class="fa-brands fa-facebook "></i>
-        <a href="https://www.facebook.com/anandhouses/" target= "_blank">Facebook</a>
-        <br>
-        <i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/anandhouses/" target= "_blank">Instagram</a>
-        <br>
-        <i class="fa-brands fa-twitter"></i>
-        <a href="https://twitter.com/AnandHouses" target= "_blank">Twiter</a>
-        </div>
-        <div class="ftr quicklink">
-            <p><u>QUICK LINK</u></p><br>
-            <li><a style="color: #051774;" href="index.html">Home</a></li><br>
-            <li><a href="service.html">Service</a></li><br>
-            <!-- <li><a href="about.html">About</a></li><br> -->
-            <li><a href="contact.html">Contact</a></li>
-
-        </div>
-        <div class="ftr address">
-        <p><u>ADDRESS</u></p><br>
-        Tekari Gaya, Bihar
-        <p class="add"></p>
-        </div>
-
     </div>
 
-</div>
+
+
+   
+   
+
+
     <footer class="cbackground">
         <p class="footer-text">
             Copywrite &copy;2022 ~ www.anandhouses.com All Rights Reserved.
@@ -309,6 +333,7 @@
     <!--Ending of the Footer-->
     <script src="js/responsive.js"></script>
     <script src="js/index.js"></script>
+   
 </body>
 
 

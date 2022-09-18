@@ -76,7 +76,7 @@
 .form-control{
     
     font-size: 16px;
-    border: 3px solid black;
+    border: 3px solid rgb(234, 190, 110);
     padding: 8px 32px;
     border-radius: 10px;
     margin-top: 10px;
@@ -87,8 +87,8 @@
 }
 .loader {
     margin: auto;
-    border: 8px solid #f3f3f3; /* Light grey */
-    border-top: 8px solid #3498db; /* Blue */
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -103,10 +103,15 @@
 .cbtn{
     font-size: 15px;
     padding: 10px;
-    border: 4px solid red;
+    border: 4px solid orange;
     border-radius: 17px;
-    background: #02020e;
-    color: white;
+    background: orange;
+    color: black;
+    font-weight: 700;
+}
+.cbtn:hover{
+  cursor: pointer;
+  transform: scale(1.08);
 }
 
 @media only screen and (min-width:350px) and (max-width:550px){

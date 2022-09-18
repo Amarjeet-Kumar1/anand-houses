@@ -1,11 +1,15 @@
-burger = document.querySelector('.burger')
-navbar = document.querySelector('.navbar')
-navlist = document.querySelector('.nav-list')
-Rightnav = document.querySelector('.Right-nav')
+burger = document.querySelector('.burger');
+
 
 burger.addEventListener('click',()=>{
-    navbar.classList.toggle('h-nav')
-    navlist.classList.toggle('opacity0')
-    Rightnav.classList.toggle('opacity0')
     
-})
+    document.getElementById("myNav").style.width = "100%";
+    
+});
+
+
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
