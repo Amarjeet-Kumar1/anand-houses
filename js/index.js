@@ -84,7 +84,7 @@ window.onclick = function(event) {
 }
 
 //announcement section
-if(window.location.pathname == "/index.html"){
+if(window.location.pathname == "/index.html" || window.location.pathname == "/anand-houses/index.html"){
 var annIcon = document.querySelector(".ann-icon i");
 setInterval(function(){
     annIcon.classList.add("ani-icon");
