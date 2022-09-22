@@ -1,0 +1,21 @@
+{
+    "name": "Anand Houses : Make Your Dream Home",
+    "short_name": "Anand Houses",
+    "discription": "AnandHouses is one of the best and trusted Indian brand which provides you unique and latest Indian house design and floor plan 
+    online for your dream home that have designed by top architects.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
