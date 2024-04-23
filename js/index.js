@@ -1,4 +1,5 @@
 
+const sdk = new CustomerSupportSDK('qa7nM5KuItdvhdqf_lCfD');
 window.onload=function(){
    // Get the modal
 var modal = document.getElementById("myModal");
