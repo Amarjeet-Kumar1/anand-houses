@@ -1,7 +1,7 @@
 
 window.onload=function(){
    
-const sdk = new CustomerSupportSDK('yzTaSkQwDx6D3tDwzO37P');
+const sdk = new CustomerSupportSDK('Bjxqd2Vq3csghkWB90bUO');
    // Get the modal
 var modal = document.getElementById("myModal");
 
