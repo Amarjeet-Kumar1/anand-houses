@@ -1,7 +1,10 @@
 
 window.onload=function(){
    
-const sdk = new CustomerSupportSDK('Bjxqd2Vq3csghkWB90bUO');
+   const sdk = new AIChatSDK("717df806-3289-43e6-a082-3420f730c325", {
+  bottom: "20px",
+  left: "20px",
+});
    // Get the modal
 var modal = document.getElementById("myModal");
 
