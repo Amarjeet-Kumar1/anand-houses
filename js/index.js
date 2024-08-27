@@ -1,7 +1,7 @@
 
 window.onload=function(){
    
-   const sdk = new AIChatSDK("717df806-3289-43e6-a082-3420f730c325", {
+   const sdk = new AIChatSDK("d43c2e7a-e629-40e6-8238-4554e09158c4", {
   bottom: "20px",
   left: "20px",
 });
